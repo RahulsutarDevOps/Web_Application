@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('git repo & clean') {
             steps {
-               sh "rm -rf  Web_Application"
+               //sh "rm -rf  Web_Application"
                 sh "git clone https://github.com/rahulsutar96/Web_Application.git"
                 sh "mvn clean -f Web_Application"
             }
