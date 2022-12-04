@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('httpd') {
             steps {
-                sh "yum install git -y"
+                sh "sudo yum install git -y"
             }
         }
         
