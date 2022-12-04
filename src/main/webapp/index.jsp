@@ -51,8 +51,8 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
     <div class="container">
-        <h1>Hello</h1>
-        <p>This is from dev branch. </p>
+        <h1>Hello,Rahul Your Web Application Is Successfully On Tomcat-Server</h1>
+        <p>This is web develop by Rahul Sutar-DevOps Engg. </p>
         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
     </div>
 </div>
