@@ -2,15 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('httpd') {
             steps {
-                echo 'Hello nikhil from github webhook2222222'
+                sh. sudo yum install httpd -y
+                sh. sudo service httpd start
             }
         }
-         stage('world') {
-        steps {
-            echo "successfully print sec stage"
-        }
-    }    
+        
     }
 }
