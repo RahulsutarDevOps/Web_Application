@@ -1,24 +1,22 @@
 pipeline {
     agent any 
-            stages {
-        stage('FIRST-STAGE') { 
+    stages {
+        stage('httpd') { 
           steps {
-            sh 'sudo yum install httpd -y' 
+            sh 'yum install httpd -y' 
               }
         }
-        stage('SEC-STAGE') {
+        stage('start') {
             steps {
-            sh'sudo service httpd start'
+            sh'service httpd start'
             }
         }
-        stage('THI-STAGE') {
+        stage('create') {
             steps {
-            sh 'sudo touch index.html'
+            sh 'touch index.html'
             sh 'echo "Hi Rahul How Are You" >> index.html'
-            sh 'sudo cp -r index.html /var/www/html'
-            sh 'sudo chmod 777 /var/www/html/index.html'
+            sh 'cp -r index.html /var/www/html'
+            sh 'chmod 777 /var/www/html/index.html'
           }  
         }
     }
-}
-
