@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('httpd') { 
           steps {
-            sh 'yum install httpd -y' 
+            sh 'sudo yum install httpd -y' 
               }
         }
         stage('start') {
             steps {
-            sh'service httpd start'
+            sh'sudo systemctl start httpd'
             }
         }
         stage('create') {
