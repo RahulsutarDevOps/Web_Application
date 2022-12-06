@@ -8,7 +8,7 @@ pipeline {
         }
         stage('start') {
             steps {
-            sh'sudo systemctl start httpd'
+            sh 'sudo systemctl start httpd'
             }
         }
         stage('create') {
