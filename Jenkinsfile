@@ -14,6 +14,7 @@ pipeline {
         stage('deploy') {
             steps {
             echo "your code successfully deploy on server"
+                echo " webhook success"
            
           }  
         }
