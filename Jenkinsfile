@@ -24,6 +24,11 @@ pipeline {
         echo 'your code successfully deploy on server'
       }
     }
+    stage('email') {
+      steps {
+        echo 'developer code fail and send related mail'
+      }
+    }
 
   }
 }
